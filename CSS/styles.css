@@ -1,0 +1,102 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: #2f2f2f;
+}
+
+.navbar {
+	background-color: #e8f3e8;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	/* 	This puts more space between the links in the navbar on the top right */
+	justify-content: space-between;
+	/* Top should be set to 0 to stick it to the top of the page	 */
+	position: sticky;
+	top: 0;
+}
+
+.navbar ul {
+	display: flex;
+	/* Gap spaces out the children that are being flexed	 */
+	gap: 1.5rem;
+}
+
+.logo {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.nav-links a {
+	margin-right: 1.5rem;
+	text-decoration: none;
+	color: #2f2f2f;
+}
+
+.nav-links ul li {
+	list-style: none;
+}
+
+.hero {
+	text-align: center;
+	padding: 3rem 2rem;
+	background-color: #f5f9f5;
+}
+
+.hero h1 {
+	margin-bottom: 0.5rem;
+}
+
+.featured {
+	padding: 2rem;
+}
+
+.featured h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.card img {
+	max-width: 50%;
+	display: block;
+	border-radius: 4px;
+}
+
+.card h3 {
+	margin: 0.5rem 0;
+}
+
+.site-footer {
+	background-color: #2f2f2f;
+	color: white;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.footer-col {
+	width: 150px;
+	text-align: center;
+}
+
+.footer-col h4 {
+	margin-top: 0;
+}
